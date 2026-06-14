@@ -1,2 +1,44 @@
-# blue-white-fans
-Web project for Israel national football team fan club
+# Blue & White Fans
+
+מערכת ווב למועדון האוהדים של נבחרת ישראל בכדורגל.
+
+## תיאור הפרויקט
+
+האתר מרכז מידע ושירותים עבור אוהדי נבחרת ישראל:
+משחקים קרובים, סוגי חברות, הרשמה למועדון, אירועים ונסיעות,
+בדיקת התאמה לאירוע אוהדים, חנות אוהדים, צור קשר, דף צוות ודפים אישיים.
+
+## טכנולוגיות
+
+- HTML
+- CSS
+- JavaScript
+- PHP
+- MySQL
+
+## דפי האתר
+
+- index.html — דף הבית
+- games.html — משחקים קרובים
+- join.html — סוגי חברות
+- join_db.php — הרשמה למועדון עם MySQL
+- events.html — אירועים ונסיעות
+- fan_event_check.html — בדיקת התאמה לאירוע אוהדים
+- fan_event_check.php — עיבוד PHP ללא בסיס נתונים
+- shop.html — חנות אוהדים
+- contact.html — צור קשר
+- team.html — דף צוות
+- member1.html — דף אישי חבר צוות 1
+- member2.html — דף אישי חבר צוות 2
+- member3.html — דף אישי חבר צוות 3
+
+## חברי צוות
+
+עמנואל דנילוב 211393400
+עומר שפירא 207475518
+איתי ניניו 207455726
+
+https://blue-white-fans.byethost18.com/index.html
+## הערה
+
+קובץ join_db.php משתמש ב־PHP וב־MySQL כדי להוסיף רשומות לטבלת fans ולהציג את הטבלה באתר.
