@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>משחקים קרובים</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+
+<header>
+    <div class="navbar">
+        <div class="brand">
+            <div class="logo-circle">★</div>
+            <div>אוהדי נבחרת ישראל</div>
+        </div>
+         <nav class="nav-links">
+            <a href="index.html">דף הבית</a>
+            <a href="games.html">משחקים קרובים</a>
+            <a href="join.html">סוגי חברות</a>
+            <a href="join_db.php">הרשמה למועדון</a>
+            <a href="events.html">אירועים ונסיעות</a>
+            <a href="fan_event_check.html">התאמה לאירוע אוהדים</a>
+            <a href="shop.html">חנות אוהדים</a>
+            <a href="contact.html">צור קשר</a>
+            <a href="team.html">דף צוות</a>
+        </nav>
+    </div>
+</header>
+
+<section class="page-hero">
+    <div class="container">
+        <h1>משחקים קרובים</h1>
+        <p>בחר משחק כדי לראות פרטים נוספים.</p>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <div class="panel games-table-box">
+    <h2>טבלת משחקים קרובים</h2>
+
+    <table class="games-table">
+        <tr>
+            <th>יריבה</th>
+            <th>תאריך</th>
+            <th>שעה</th>
+            <th>מיקום</th>
+        </tr>
+        <tr>
+            <td>יוון</td>
+            <td>18/05/2026</td>
+            <td>20:45</td>
+            <td>אצטדיון בלומפילד</td>
+        </tr>
+        <tr>
+            <td>רומניה</td>
+            <td>07/06/2026</td>
+            <td>21:00</td>
+            <td>אצטדיון סמי עופר</td>
+        </tr>
+        <tr>
+            <td>שווייץ</td>
+            <td>23/06/2026</td>
+            <td>19:30</td>
+            <td>אצטדיון טדי</td>
+        </tr>
+    </table>
+</div>
+        <div class="cards">
+            <div class="card"><div class="card-body">
+                <h3>ישראל נגד יוון</h3>
+                <p class="meta">תאריך: 18/05/2026<br>שעה: 20:45</p>
+                <button class="btn btn-primary" onclick="showGameInfo('יוון','18/05/2026','אצטדיון בלומפילד')">הצג פרטים</button>
+            </div></div>
+            <div class="card"><div class="card-body">
+                <h3>ישראל נגד רומניה</h3>
+                <p class="meta">תאריך: 07/06/2026<br>שעה: 21:00</p>
+                <button class="btn btn-primary" onclick="showGameInfo('רומניה','07/06/2026','אצטדיון סמי עופר')">הצג פרטים</button>
+            </div></div>
+            <div class="card"><div class="card-body">
+                <h3>ישראל נגד שווייץ</h3>
+                <p class="meta">תאריך: 23/06/2026<br>שעה: 19:30</p>
+                <button class="btn btn-primary" onclick="showGameInfo('שווייץ','23/06/2026','אצטדיון טדי')">הצג פרטים</button>
+            </div></div>
+        </div>
+        <div class="notice" id="gameInfo" style="margin-top:22px;"></div>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-grid">
+        <div class="footer-box">
+            <h3>יצירת קשר</h3>
+            <p>אימייל: bluewhitefansil@gmail.com</p>
+            <p>טלפון: 050-0000000</p>
+        </div>
+        <div class="footer-box">
+            <h3>על המערכת</h3>
+            <p>אתר לדוגמה עבור מועדון האוהדים של נבחרת ישראל בכדורגל.</p>
+        </div>
+    </div>
+    <div class="small-center">כל הזכויות שמורות © Sterlings </div>
+</footer>
+
+</body>
+</html>

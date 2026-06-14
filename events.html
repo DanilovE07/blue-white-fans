@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>אירועים ונסיעות</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+
+<header>
+    <div class="navbar">
+        <div class="brand">
+            <div class="logo-circle">★</div>
+            <div>אוהדי נבחרת ישראל</div>
+        </div>
+         <nav class="nav-links">
+            <a href="index.html">דף הבית</a>
+            <a href="games.html">משחקים קרובים</a>
+            <a href="join.html">סוגי חברות</a>
+            <a href="join_db.php">הרשמה למועדון</a>
+            <a href="events.html">אירועים ונסיעות</a>
+            <a href="fan_event_check.html">התאמה לאירוע אוהדים</a>
+            <a href="shop.html">חנות אוהדים</a>
+            <a href="contact.html">צור קשר</a>
+            <a href="team.html">דף צוות</a>
+        </nav>
+    </div>
+</header>
+
+<section class="page-hero">
+    <div class="container">
+        <h1>אירועים ונסיעות</h1>
+        <p>התעדכנו בפעילויות הקרובות של קהילת האוהדים.</p>
+    </div>
+</section>
+
+<section class="section">
+    <div class="panel media-box">
+    <h2>סרטון אוהדים</h2>
+
+    <video width="420" height="260" controls>
+        <source src="fans-video.mp4" type="video/mp4">
+        הדפדפן שלך לא תומך בתגית video.
+    </video>
+</div>
+    <div class="container cards">
+        <div class="card">
+            <div class="card-body">
+                <h3>צפייה משותפת</h3>
+                <p class="meta">אירוע צפייה עם אוהדים באווירה מיוחדת, שירים ודגלים.</p>
+                <button class="btn btn-primary" onclick="showEventMessage('watch')">אני מעוניין</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <h3>נסיעה מאורגנת</h3>
+                <p class="meta">יציאה משותפת עם אוהדים למשחק הקרוב, כולל עדכוני לוגיסטיקה.</p>
+                <button class="btn btn-primary" onclick="showEventMessage('travel')">אני מעוניין</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <h3>מפגש אוהדים</h3>
+                <p class="meta">מפגש חברתי לקראת המשחק הבא עם הפעלות קהילתיות.</p>
+                <button class="btn btn-primary" onclick="showEventMessage('meet')">אני מעוניין</button>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="notice" id="eventResult" style="margin-top:22px;"></div>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-grid">
+        <div class="footer-box">
+            <h3>יצירת קשר</h3>
+            <p>אימייל: bluewhitefansil@gmail.com</p>
+            <p>טלפון: 050-0000000</p>
+        </div>
+        <div class="footer-box">
+            <h3>על המערכת</h3>
+            <p>אתר לדוגמה עבור מועדון האוהדים של נבחרת ישראל בכדורגל.</p>
+        </div>
+    </div>
+    <div class="small-center">כל הזכויות שמורות © Sterlings </div>
+</footer>
+
+</body>
+</html>

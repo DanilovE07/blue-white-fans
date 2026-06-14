@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>חנות אוהדים</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+
+<header>
+    <div class="navbar">
+        <div class="brand">
+            <div class="logo-circle">★</div>
+            <div>אוהדי נבחרת ישראל</div>
+        </div>
+       <nav class="nav-links">
+            <a href="index.html">דף הבית</a>
+            <a href="games.html">משחקים קרובים</a>
+            <a href="join.html">סוגי חברות</a>
+            <a href="join_db.php">הרשמה למועדון</a>
+            <a href="events.html">אירועים ונסיעות</a>
+            <a href="fan_event_check.html">התאמה לאירוע אוהדים</a>
+            <a href="shop.html">חנות אוהדים</a>
+            <a href="contact.html">צור קשר</a>
+            <a href="team.html">דף צוות</a>
+        </nav>
+    </div>
+</header>
+
+<section class="page-hero">
+    <div class="container">
+        <h1>חנות אוהדים</h1>
+        <p>בחר מוצרים ובדוק את הסכום הכולל.</p>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container split">
+        <div class="panel">
+            <h2>מוצרים</h2>
+            <div class="form-row">
+                <label for="scarfQty">צעיף כחול-לבן — 50 ₪</label>
+                <input type="number" id="scarfQty" min="0" value="0">
+            </div>
+            <div class="form-row">
+                <label for="shirtQty">חולצת אוהד — 120 ₪</label>
+                <input type="number" id="shirtQty" min="0" value="0">
+            </div>
+            <div class="form-row">
+                <label for="flagQty">דגל אוהדים — 35 ₪</label>
+                <input type="number" id="flagQty" min="0" value="0">
+            </div>
+            <button class="btn btn-primary" onclick="calculateShopTotal()">חשב סכום</button>
+            <div class="notice" id="shopResult"></div>
+        </div>
+
+        <div class="banner">
+            <h2>אווירת איצטדיון גם בבית</h2>
+            <p>מבחר מוצרי אוהדים בעיצוב כחול-לבן שמתאים לקונספט של האתר.</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-grid">
+        <div class="footer-box">
+            <h3>יצירת קשר</h3>
+            <p>אימייל: bluewhitefansil@gmail.com</p>
+            <p>טלפון: 050-0000000</p>
+        </div>
+        <div class="footer-box">
+            <h3>על המערכת</h3>
+            <p>אתר לדוגמה עבור מועדון האוהדים של נבחרת ישראל בכדורגל.</p>
+        </div>
+    </div>
+    <div class="small-center">כל הזכויות שמורות © Sterlings </div>
+</footer>
+
+</body>
+</html>

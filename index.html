@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>אוהדי נבחרת ישראל - דף הבית</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+
+<header>
+    <div class="navbar">
+        <div class="brand">
+            <div class="logo-circle">★</div>
+            <div>אוהדי נבחרת ישראל</div>
+        </div>
+        <nav class="nav-links">
+            <a href="index.html">דף הבית</a>
+            <a href="games.html">משחקים קרובים</a>
+            <a href="join.html">סוגי חברות</a>
+            <a href="join_db.php">הרשמה למועדון</a>
+            <a href="events.html">אירועים ונסיעות</a>
+            <a href="fan_event_check.html">התאמה לאירוע אוהדים</a>
+            <a href="shop.html">חנות אוהדים</a>
+            <a href="contact.html">צור קשר</a>
+            <a href="team.html">דף צוות</a>
+        </nav>
+    </div>
+</header>
+
+<section class="hero">
+    <div class="container hero-grid">
+        <div class="hero-card">
+            <img src="Israel_football_association.png" alt="לוגו ההתאחדות לכדורגל בישראל" class="home-logo">
+            <h1>מועדון האוהדים של נבחרת ישראל בכדורגל</h1>
+            <p>
+                ברוכים הבאים לאתר האוהדים של נבחרת ישראל — מקום אחד שבו אוהדי הנבחרת יכולים
+                להתעדכן במשחקים, להצטרף למועדון, לקבל מידע על אירועים ונסיעות,
+                וליהנות מחוויית אוהדים מעוצבת ונוחה.
+            </p>
+            <div class="hero-actions">
+                <a class="btn btn-primary" href="join.html">הצטרפות למועדון</a>
+                <a class="btn btn-primary" href="games.html">לצפייה במשחקים הקרובים</a>
+            </div>
+        </div>
+
+        <div class="hero-form">
+            <div class="panel">
+                <h3>ברוך הבא למערכת</h3>
+                <div class="form-row">
+                    <label for="fanName">שם האוהד</label>
+                    <input type="text" id="fanName" placeholder="הכנס שם">
+                </div>
+                <div class="form-row">
+                    <label for="favoriteArea">מה הכי מעניין אותך באתר?</label>
+                    <select id="favoriteArea">
+                        <option>משחקים קרובים</option>
+                        <option>אירועים ונסיעות</option>
+                        <option>חנות אוהדים</option>
+                        <option>הצטרפות למועדון</option>
+                    </select>
+                </div>
+                <button class="btn btn-primary" onclick="showGreeting()">שלח</button>
+                <div class="notice" id="welcomeResult"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <div class="section-title">
+            <h2>מה תמצאו באתר?</h2>
+            <p>כל מה שאוהד של נבחרת ישראל צריך במקום אחד</p>
+        </div>
+
+        <div class="cards">
+            <div class="card">
+                <div class="card-top"></div>
+                <div class="card-body">
+                    <h3>משחקים קרובים</h3>
+                    <p class="meta">מידע מרוכז על משחקים, תאריכים, מיקומים והכנה לחוויית האוהדים.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-top"></div>
+                <div class="card-body">
+                    <h3>אירועים ונסיעות</h3>
+                    <p class="meta">צפיות משותפות, מפגשי אוהדים ופרטים על נסיעות מאורגנות.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-top"></div>
+                <div class="card-body">
+                    <h3>חנות אוהדים</h3>
+                    <p class="meta">מוצרים בצבעי כחול-לבן: צעיפים, חולצות ודגלים.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <div class="section-title">
+            <h2>קישורים שימושיים לאוהדי הנבחרת</h2>
+            <p>רשימה וקישורים חיצוניים הקשורים לעולם הכדורגל</p>
+        </div>
+
+        <div class="panel">
+            <h3>קישורים שימושיים לאוהדי הנבחרת</h3>
+
+            <ul class="external-links">
+                <li>
+                    <a href="https://www.football.org.il" target="_blank">
+                        אתר ההתאחדות לכדורגל בישראל
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.uefa.com" target="_blank">
+                        אתר UEFA
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.fifa.com" target="_blank">
+                        אתר FIFA
+                    </a>
+                </li>
+            </ul>
+            <button class="btn btn-primary" onclick="showFanBenefits()">הצג יתרונות</button>
+<div class="notice" id="benefitsOutput"></div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-grid">
+        <div class="footer-box">
+            <h3>יצירת קשר</h3>
+            <p>אימייל: bluewhitefansil@gmail.com</p>
+            <p>טלפון: 050-0000000</p>
+        </div>
+        <div class="footer-box">
+            <h3>על המערכת</h3>
+            <p>אתר לדוגמה עבור מועדון האוהדים של נבחרת ישראל בכדורגל.</p>
+        </div>
+    </div>
+    <div class="small-center">כל הזכויות שמורות © Sterlings </div>
+</footer>
+
+</body>
+</html>

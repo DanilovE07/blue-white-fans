@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>התאמה לאירוע אוהדים</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+
+<header>
+    <div class="navbar">
+        <div class="brand">
+            <div class="logo-circle">★</div>
+            <div>Blue & White Fans</div>
+        </div>
+
+        <nav class="nav-links">
+            <a href="index.html">דף הבית</a>
+            <a href="games.html">משחקים קרובים</a>
+            <a href="join.html">סוגי חברות</a>
+            <a href="join_db.php">הרשמה למועדון</a>
+            <a href="events.html">אירועים ונסיעות</a>
+            <a href="fan_event_check.html">התאמה לאירוע אוהדים</a>
+            <a href="shop.html">חנות אוהדים</a>
+            <a href="contact.html">צור קשר</a>
+            <a href="team.html">דף צוות</a>
+        </nav>
+    </div>
+</header>
+
+<section class="page-hero">
+    <div class="container">
+        <h1>בדיקת התאמה לאירוע אוהדים</h1>
+        <p>מלאו פרטים בסיסיים והמערכת תציע פעילות אוהדים מתאימה.</p>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container split">
+
+        <div class="panel">
+            <h2>טופס התאמה</h2>
+
+            <form action="fan_event_check.php" method="post">
+                <div class="form-row">
+                    <label for="fanName">שם אוהד</label>
+                    <input type="text" id="fanName" name="fanName" placeholder="הכנס שם אוהד">
+                </div>
+
+                <div class="form-row">
+                    <label for="age">גיל</label>
+                    <input type="number" id="age" name="age" min="1" placeholder="הכנס גיל">
+                </div>
+
+                <div class="form-row">
+                    <label for="city">עיר מגורים</label>
+                    <input type="text" id="city" name="city" placeholder="הכנס עיר">
+                </div>
+
+                <div class="form-row">
+                    <label for="participants">מספר משתתפים</label>
+                    <input type="number" id="participants" name="participants" min="1" placeholder="לדוגמה: 3">
+                </div>
+
+                <div class="form-row">
+                    <label for="activityType">סוג פעילות מועדפת</label>
+                    <select id="activityType" name="activityType">
+                        <option value="צפייה משותפת">צפייה משותפת</option>
+                        <option value="נסיעה למשחק">נסיעה למשחק</option>
+                        <option value="מפגש אוהדים">מפגש אוהדים</option>
+                    </select>
+                </div>
+
+                <input type="submit" class="btn btn-primary" value="בדוק התאמה">
+                <input type="reset" class="btn btn-primary" value="נקה טופס">
+            </form>
+        </div>
+
+        <div class="banner">
+            <h2>מה הדף עושה?</h2>
+            <p>
+                הדף שולח את הנתונים ל־PHP, ושם מתבצע עיבוד בצד השרת.
+                המערכת מחשבת עלות משוערת ומציגה המלצות לאוהד לפי הנתונים שהוזנו.
+            </p>
+            <p>
+                זהו טופס PHP ללא בסיס נתונים, ולכן הוא שונה מדף ההרשמה למועדון ששומר נתונים ב־MySQL.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <div class="footer-grid">
+        <div class="footer-box">
+            <h3>יצירת קשר</h3>
+            <p>אימייל: bluewhitefansil@gmail.com</p>
+            <p>טלפון: 050-0000000</p>
+        </div>
+
+        <div class="footer-box">
+            <h3>Blue & White Fans</h3>
+            <p>מועדון האוהדים של נבחרת ישראל בכדורגל.</p>
+        </div>
+    </div>
+
+    <div class="small-center">כל הזכויות שמורות © Sterlings </div>
+</footer>
+
+</body>
+</html>

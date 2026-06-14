@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>צור קשר</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+
+<header>
+    <div class="navbar">
+        <div class="brand">
+            <div class="logo-circle">★</div>
+            <div>אוהדי נבחרת ישראל</div>
+        </div>
+         <nav class="nav-links">
+            <a href="index.html">דף הבית</a>
+            <a href="games.html">משחקים קרובים</a>
+            <a href="join.html">סוגי חברות</a>
+            <a href="join_db.php">הרשמה למועדון</a>
+            <a href="events.html">אירועים ונסיעות</a>
+            <a href="fan_event_check.html">התאמה לאירוע אוהדים</a>
+            <a href="shop.html">חנות אוהדים</a>
+            <a href="contact.html">צור קשר</a>
+            <a href="team.html">דף צוות</a>
+        </nav>
+    </div>
+</header>
+
+<section class="page-hero">
+    <div class="container">
+        <h1>צור קשר</h1>
+        <p>.</p>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container split">
+        <div class="panel">
+            <h2>שליחת פנייה</h2>
+            <form class="contact-form">
+    <div class="form-row">
+        <label for="contactName">שם מלא</label>
+        <input type="text" id="contactName" name="fullName" placeholder="הכנס שם מלא">
+    </div>
+
+    <div class="form-row">
+        <label for="contactEmail">אימייל</label>
+        <input type="email" id="contactEmail" name="email" placeholder="הכנס אימייל">
+    </div>
+
+    <div class="form-row">
+        <label for="contactPhone">טלפון</label>
+        <input type="tel" id="contactPhone" name="phone" placeholder="הכנס טלפון">
+    </div>
+
+    <div class="form-row">
+    <label>נושא הפנייה</label>
+
+    <div class="choice-row">
+        <input type="radio" id="topicJoin" name="topic" value="join">
+        <label for="topicJoin">הצטרפות למועדון</label>
+    </div>
+
+    <div class="choice-row">
+        <input type="radio" id="topicEvents" name="topic" value="events">
+        <label for="topicEvents">אירועים ונסיעות</label>
+    </div>
+
+    <div class="choice-row">
+        <input type="radio" id="topicShop" name="topic" value="shop">
+        <label for="topicShop">חנות אוהדים</label>
+    </div>
+</div>
+
+    <div class="form-row">
+        <div class="choice-row">
+            <input type="checkbox" id="updates" name="updates" value="yes">
+            <label for="updates">אני מעוניין לקבל עדכונים</label>
+        </div>
+    </div>
+
+    <div class="form-row">
+        <label for="contactCity">עיר</label>
+        <select id="contactCity" name="city">
+            <option value="תל אביב">תל אביב</option>
+            <option value="חיפה">חיפה</option>
+            <option value="ירושלים">ירושלים</option>
+            <option value="באר שבע">באר שבע</option>
+            <option value="אחר">אחר</option>
+        </select>
+    </div>
+
+    <div class="form-row">
+        <label for="contactMessage">תוכן הפנייה</label>
+        <textarea id="contactMessage" name="message" placeholder="כתוב את הפנייה שלך"></textarea>
+    </div>
+
+
+    <button type="button" class="btn btn-primary" onclick="sendMail()">שלח למייל</button>
+    <input type="reset" class="btn btn-primary" value="נקה טופס">
+
+    <div class="notice" id="contactResult"></div>
+</form>
+
+        <div class="panel">
+            <h2>פרטי קשר</h2>
+            <p class="meta">אימייל: bluewhitefansil@gmail.com</p>
+            <p class="meta">טלפון: 050-0000000</p>
+            <p class="meta">אופציה ג' תעלה לזום עם נדב הגואט</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-grid">
+        <div class="footer-box">
+            <h3>יצירת קשר</h3>
+            <p>אימייל: bluewhitefansil@gmail.com</p>
+            <p>טלפון: 050-0000000</p>
+        </div>
+        <div class="footer-box">
+            <h3>על המערכת</h3>
+            <p>אתר לדוגמה עבור מועדון האוהדים של נבחרת ישראל בכדורגל.</p>
+        </div>
+    </div>
+    <div class="small-center">כל הזכויות שמורות © Sterlings </div>
+</footer>
+
+</body>
+</html>
