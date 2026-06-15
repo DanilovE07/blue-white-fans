@@ -107,6 +107,13 @@ if (isset($_POST["submitFan"])) {
     $membershipType = $_POST["membershipType"];
 
     if ($fullName != "" && $email != "" && $city != "") {
+
+    $sqlCheck = "SELECT * FROM fans WHERE email = '".$email."'";
+    $checkResult = $conn->query($sqlCheck);
+
+    if ($checkResult->num_rows > 0) {
+        echo "<div class='notice'>האימייל כבר קיים במערכת, לא ניתן להירשם פעמיים עם אותו אימייל.</div>";
+    } else {
         $sqlInsert = "INSERT INTO fans (full_name, email, city, membership_type)
                       VALUES ('".$fullName."', '".$email."', '".$city."', '".$membershipType."')";
 
@@ -115,8 +122,10 @@ if (isset($_POST["submitFan"])) {
         } else {
             echo "<div class='notice'>שגיאה בהוספה: " . $conn->error . "</div>";
         }
+    }
+
     } else {
-        echo "<div class='notice'>נא למלא שם, אימייל ועיר.</div>";
+    echo "<div class='notice'>נא למלא שם, אימייל ועיר.</div>";
     }
 }
 
